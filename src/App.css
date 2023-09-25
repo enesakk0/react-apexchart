@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100vw;
+  padding: 20px;
+}
+
+.chart-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+  width: 30%;
+}
+
+.chart-title {
+  background-color: antiquewhite;
+  color: black;
+  font-family: Candara, sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.chart-button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.chart-button-group > button {
+  padding: 10px;
+  background-color: #d7263d;
+  color: white;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .chart-container {
+    width: 90%;
+  }
+}
